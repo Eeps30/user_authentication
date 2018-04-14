@@ -46,8 +46,6 @@ class SignIn extends Component {
 
         const {values, errors} = this.props
 
-        console.log('Errors:', errors)
-
         const fields = inputs.map((field, index) => {
             return <Field key={index} {...field} value={values[field.name] || ''}/>
         })
